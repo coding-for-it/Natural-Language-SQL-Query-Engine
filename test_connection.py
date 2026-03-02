@@ -12,12 +12,12 @@ try:
         schema=SNOWFLAKE_SCHEMA
     )
 
-    print("✅ Snowflake connected successfully!")
+    print("Snowflake connected successfully!")
 
     conn.close()
 
 except Exception as e:
-    print("❌ Connection failed")
+    print("Connection failed")
     print(e)
 '''
 from snowflake_connector import execute_query
