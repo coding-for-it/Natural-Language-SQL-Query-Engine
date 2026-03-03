@@ -72,6 +72,7 @@ if uploaded_files:
 
         st.success(f"{file.name} uploaded successfully")
 
+        #metadata cache
         st.session_state.schema_text += (
             f"\nTable: {logical_name}\n"
             f"Columns: {', '.join(df.columns)}\n"
