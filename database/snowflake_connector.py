@@ -76,7 +76,7 @@ def run_query(physical_sql):
     cursor = conn.cursor()
 
     try:
-        cursor.execute(physical_sql)
+        cursor.execute(physical_sql) #virtual warehouse cache
         df = cursor.fetch_pandas_all()
     except Exception as e:
         conn.close()
